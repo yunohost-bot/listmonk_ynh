@@ -33,7 +33,7 @@ then
 	ynh_script_progression --message="Upgrading source files..." --weight=5
 
 	# Download, check integrity, uncompress and patch the source from app.src
-	ynh_setup_source --dest_dir="$install_dir" --keep="$install_dir/config.toml"
+	ynh_setup_source --dest_dir="$install_dir" --full_replace=1 --keep="$install_dir/config.toml"
 	
 fi
 
